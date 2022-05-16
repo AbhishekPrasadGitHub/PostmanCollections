@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "d3aa9563-d6ad-4390-b77b-0dbc72846f24",
+		"name": "LocalAngularApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Head",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/server-1.0-SNAPSHOT/webapi/Contacts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"server-1.0-SNAPSHOT",
+						"webapi",
+						"Contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/server-1.0-SNAPSHOT/webapi/Contacts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"server-1.0-SNAPSHOT",
+						"webapi",
+						"Contacts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/server-1.0-SNAPSHOT/webapi/Contacts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"server-1.0-SNAPSHOT",
+						"webapi",
+						"Contacts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\": \"032 Waubesa Avenue\",\r\n    \"email\": \"rfarquhar0@va.gov\",\r\n    \"id\": 1,\r\n    \"name\": \"Rhhoddy Farquhar\",\r\n    \"notes\": \"vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id\",\r\n    \"phone\": \"2906036054\",\r\n    \"photo\": \"https://robohash.org/illumetrerum.png?size=100x100&set=set1\",\r\n    \"url\": \"http://prweb.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/server-1.0-SNAPSHOT/webapi/Contacts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"server-1.0-SNAPSHOT",
+						"webapi",
+						"Contacts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
